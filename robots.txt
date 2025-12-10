@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: hagoi.tech
+
+Sitemap: https://hagoi.tech/sitemap.xml
