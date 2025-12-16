@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hagoi Macro | Financial Market Research</title>
+  <meta name="description" content="Hagoi Macro operates as a macro-oriented research unit within Hagoi Teknologi Maju, focused on systematic analysis of global financial markets in Indonesia.">
+  <meta name="keywords" content="Hagoi Macro, Hagoi Teknologi Maju, Financial Research, Macroeconomics, Palangka Raya, Systematic Analysis">
+  <link rel="canonical" href="https://hagoi.tech/macro">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hagoi.tech/macro">
+  <meta property="og:title" content="Hagoi Macro | Research Unit">
+  <meta property="og:description" content="Systematic analysis of global financial markets based in Indonesia.">
+  <meta property="og:image" content="https://hagoi.tech/favicon.png">
+
+  <link rel="icon" type="image/png" href="https://hagoi.tech/favicon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Hagoi Macro",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Hagoi Teknologi Maju"
+    },
+    "url": "https://hagoi.tech/macro",
+    "logo": "https://hagoi.tech/favicon.png",
+    "description": "A macro-oriented research unit dedicated to the systematic study of macroeconomic and financial market behavior.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Palangka Raya",
+      "addressRegion": "Kalimantan Tengah",
+      "addressCountry": "ID"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62-857-8700-8884",
+      "contactType": "general inquiries",
+      "email": "contact@hagoi.tech"
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #fff;
+    }
+
+    header {
+      padding: 32px;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #555;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    #view {
+      min-height: calc(100vh - 220px);
+    }
+
+    .hero {
+      padding: 96px 24px 72px;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .hero-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .content {
+      max-width: 760px;
+      margin: auto;
+      padding: 72px 24px;
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    .block {
+      margin-bottom: 48px;
+    }
+
+    .address {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .contact-links a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 48px 24px;
+    }
+
+    .footer-inner {
+      max-width: 760px;
+      margin: auto;
+      opacity: 0.75;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <strong>
+    <a href="?page=home" onclick="handleNav(event, 'home')" style="text-decoration:none; color:inherit;">
+      Hagoi Macro
+    </a>
+  </strong>
+  <nav style="float:right">
+    <a href="?page=home" onclick="handleNav(event, 'home')" id="nav-home">Home</a>
+    <a href="?page=about" onclick="handleNav(event, 'about')" id="nav-about">About</a>
+    <a href="?page=contact" onclick="handleNav(event, 'contact')" id="nav-contact">Contact</a>
+  </nav>
+</header>
+
+<main id="view"></main>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2025 Hagoi Teknologi Maju. All Rights Reserved.</p>
+    <p>
+      hagoi.tech is the only official website associated with Hagoi Teknologi Maju
+      and related internal research initiatives.
+    </p>
+  </div>
+</footer>
+
+<script>
+const view = document.getElementById("view");
+const metaDescTag = document.querySelector('meta[name="description"]');
+
+const pages = {
+  home: {
+    title: "Hagoi Macro | Financial Market Research",
+    description: "Hagoi Macro operates as a macro-oriented research unit within Hagoi Teknologi Maju, focused on systematic analysis of global financial markets.",
+    content: `
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-label">Macro Research Unit</div>
+          <h1>
+            Hagoi Macro operates as a macro-oriented research unit within Hagoi Teknologi Maju,
+            focused on systematic analysis of global financial markets.
+          </h1>
+        </div>
+      </section>
+    `
+  },
+
+  about: {
+    title: "About | Hagoi Macro Research",
+    description: "Overview of Hagoi Macro's internally driven macroeconomic and financial market research activities.",
+    content: `
+      <section class="content">
+        <div class="block">
+          <h1>About Hagoi Macro</h1>
+          <p>
+            Founded in 2024, Hagoi Macro operates as an internal research unit within
+            Hagoi Teknologi Maju, dedicated to the systematic study of macroeconomic
+            and financial market behavior.
+          </p>
+          <p>
+            Activities are centered on the development of internally designed analytical
+            frameworks integrating historical market data, continuously updated
+            information streams, and iterative model refinement.
+          </p>
+          <p>
+            Emphasis is placed on disciplined research processes, reproducibility,
+            and long-term structural understanding rather than short-term outcomes.
+            All methodologies are developed and evaluated internally.
+          </p>
+          <p>
+            The research environment is intentionally compact, focused, and iterative,
+            enabling continuous experimentation, evaluation, and controlled evolution
+            of models over time.
+          </p>
+        </div>
+      </section>
+    `
+  },
+
+  contact: {
+    title: "Contact | Hagoi Teknologi Maju",
+    description: "Official contact information for Hagoi Teknologi Maju and Hagoi Macro research unit.",
+    content: `
+      <section class="content">
+        <div class="block">
+          <h1>Contact</h1>
+          <h3>Palangka Raya</h3>
+          <div class="address">
+            <strong>Hagoi Teknologi Maju</strong><br>
+            Palangka Raya, Kalimantan Tengah<br>
+            Indonesia
+          </div>
+        </div>
+
+        <div class="block">
+          <h3>Inquiries</h3>
+          <div class="address contact-links">
+            Email: <a href="mailto:contact@hagoi.tech">contact@hagoi.tech</a><br>
+            Telephone: <a href="tel:+6285787008884">085787008884</a><br>
+            WhatsApp: <a href="https://wa.me/6285787008884" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="block" style="font-size:0.85rem; color:#555;">
+          <p>
+            <strong>contact@hagoi.tech</strong> and <strong>+62 857-8700-8884</strong>
+            are the only official contact channels associated with Hagoi Teknologi Maju
+            and related internal research activities.
+          </p>
+          <p>
+            Any communications claiming association outside of these channels are not legitimate.
+          </p>
+        </div>
+      </section>
+    `
+  }
+};
+
+function renderPage(pageKey) {
+  if (!pages[pageKey]) pageKey = "home";
+  const data = pages[pageKey];
+  view.innerHTML = data.content;
+  document.title = data.title;
+  if (metaDescTag) metaDescTag.setAttribute("content", data.description);
+  document.querySelectorAll("nav a").forEach(el => el.classList.remove("active"));
+  const active = document.getElementById(`nav-${pageKey}`);
+  if (active) active.classList.add("active");
+  window.scrollTo(0, 0);
+}
+
+function handleNav(event, pageKey) {
+  event.preventDefault();
+  window.history.pushState({ page: pageKey }, "", `?page=${pageKey}`);
+  renderPage(pageKey);
+}
+
+window.onpopstate = function(event) {
+  const page = event.state?.page || new URLSearchParams(location.search).get("page") || "home";
+  renderPage(page);
+};
+
+renderPage(new URLSearchParams(location.search).get("page") || "home");
+</script>
+
+</body>
+</html>
